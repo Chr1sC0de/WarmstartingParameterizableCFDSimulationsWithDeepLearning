@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Extract centrelines",
+            "type": "python",
+            "request": "launch",
+            "program": "scripts/extract_centrelines_from_vtk.py",
+            "console": "integratedTerminal",
+            "args": ["--main_folder", "I:/VTK"]
+        },
+        {
+            "name": "Python: Unwrap Arteries",
+            "type": "python",
+            "request": "launch",
+            "program": "scripts/unwrap_vtks.py",
+            "console": "integratedTerminal",
+            "args": ["--main_folder", "I:/VTK"]
+        },
+        {
+            "name": "Python: Create Structured Grid",
+            "type": "python",
+            "request": "launch",
+            "program": "scripts/create_structured_grid_over_cylinder.py",
+            "console": "integratedTerminal",
+            "args": ["--main_folder", "I:/VTK"]
+        },
+        {
+            "name": "Python: Interpolate Grid",
+            "type": "python",
+            "request": "launch",
+            "program": "scripts/interpolate_cfd_to_structured.py",
+            "console": "integratedTerminal",
+            "args": ["--main_folder", "I:/VTK"]
+        }
+    ],
+
+}
