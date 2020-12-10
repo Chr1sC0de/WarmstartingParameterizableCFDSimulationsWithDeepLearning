@@ -1,8 +1,7 @@
 # Warmstarting Parameterizable CFD Simulations With Deep Learningls
 
 Generating example CFD simulations for deep learning can be extremely costly.
-Thus we outline a strategy for warm-starting parameterizable 3D CFD domains
-using 3D convolutional neural networks. We re-parameterize our mesh using
+Thus we outline a strategy for warm-starting parameterizable 3D CFD domains. We re-parameterize our mesh using
 transfinite interpolation to allow for a variety of domains to be processable before
 processing the data using 3D convolutional neural networks.
 
